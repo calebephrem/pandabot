@@ -30,13 +30,14 @@ module.exports = async (client, reaction) => {
       '🤩',
     ];
 
-    const { starboardChannel, starboardExcludeChannels } = serverConfig;
+    const { starboardChannel, starboardExclude } = serverConfig;
+    const { categories, channels } = starboardExclude;
     const reactionRequired = 5;
 
     const channel = message.guild.channels.cache.get(starboardChannel);
     if (!channel) return;
-    if (Object.values(starboardExcludeChannels).includes(message.channel.id))
-      return;
+    if (Object.values(channels).includes(message.channel.id)) return;
+    if (Object.values(categories).includes(message.channel.parentId)) return;
 
     const validReactions = message.reactions.cache.filter(
       (r) =>

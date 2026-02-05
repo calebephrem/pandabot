@@ -23,12 +23,16 @@
       "warn2": "1443215226681168015",
       "warn3": "1443215253423784100"
     },
-    "starboardExcludeChannels": {
-      "rules": "1429027865957109861",
-      "intro": "1429028199840350311",
-      "announcements": "1429028534994735124",
-      "partnership": "1467872510627418112",
-      "ticket": "1442927451251544236"
+    "starboardExclude": {
+      "channels": {
+        "rules": "1429027865957109861",
+        "intro": "1429028199840350311"
+      },
+      "categories": {
+        "modCategory": "1429035248754098176",
+        "ticketCategory": "1431492565760348281",
+        "importantCategory": "1444027597364400138"
+      }
     }
   }
 }
