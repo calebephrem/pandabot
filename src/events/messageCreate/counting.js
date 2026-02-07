@@ -87,6 +87,12 @@ module.exports = async (client, message) => {
           case 50:
             await message.react("😎");
             break;
+          case 67:
+            await message.react("6️⃣");
+            await message.react("7️⃣");
+            await message.react("🫲");
+            await message.react("🫱");
+            break;
           case 75:
             await message.react("✨");
             break;
